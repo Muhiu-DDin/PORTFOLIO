@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: o;
     padding: o;
     box-sizing: border-box;
@@ -8,12 +8,14 @@
     font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
-body{
+
+body {
     background-color: #081b29;
     color: #ededed;
     padding: 0rem 4rem;
 }
-header{
+
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,64 +28,76 @@ header{
     background-color: #081b29;
     z-index: 1000;
 }
-.logo{
+
+.logo {
     font-size: 1.5rem;
     font-weight: 600;
     cursor: pointer;
 }
-header ul{
+
+header ul {
     display: flex;
 }
-.menu{
+
+.menu {
     display: none;
 }
-header ul li{
+
+header ul li {
     margin-left: 2rem;
-    font-weight:450;
+    font-weight: 450;
     transition: color 0.3s linear;
 }
-header ul li:hover , header ul li.active{
+
+header ul li:hover,
+header ul li.active {
     color: #00abf0;
     cursor: pointer;
     transition: color 0.3s linear;
 }
-.hero_sec{
+
+.hero_sec {
     display: flex;
     align-items: center;
     height: 100vh;
     width: 100%;
 }
-.hero{
+
+.hero {
     width: 50%;
-    height:440px;
+    height: 440px;
 }
 
-.hero h1{
-    font-size:3rem;
+.hero h1 {
+    font-size: 3rem;
     font-weight: 600;
 }
-.hero h2{
-    font-size:2rem;
+
+.hero h2 {
+    font-size: 2rem;
     font-weight: 500;
     color: #00abf0;
     margin-top: -2rem;
 }
-.hero p{
+
+.hero p {
     margin-top: -1rem;
     margin-bottom: 2rem;
     font-weight: 500;
 }
-.button{
+
+.button {
     width: 20rem;
     height: 2.5rem;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 }
-.button button{
+
+.button button {
     position: relative;
-    width:9rem;
+    width: 9rem;
     height: 3rem;
-    background-color:#00abf0;
+    background-color: #00abf0;
     color: #081b29;
     border: 2px solid #00abf0;
     border-radius: 0.7rem;
@@ -94,190 +108,217 @@ header ul li:hover , header ul li.active{
     transition: 0.5s;
     z-index: 1;
 }
-.button button:nth-child(2){
+
+.button button:nth-child(2) {
     background-color: transparent;
     color: #00abf0;
 }
-.button button::before{
+
+.button button::before {
     position: absolute;
     content: " ";
-    width:0;
+    width: 0;
     height: 100%;
-    background-color:#081b29;
+    background-color: #081b29;
     top: 0;
     left: 0;
     transition: 0.5s;
-    z-index:-1;
+    z-index: -1;
 }
-.button button:hover::before{
+
+.button button:hover::before {
     width: 100%;
 }
-.button button:nth-child(2)::before{
+
+.button button:nth-child(2)::before {
     background-color: #00abf0;
 }
-.button button:nth-child(2):hover{
+
+.button button:nth-child(2):hover {
     color: #081b29;
 }
-.button button:hover{
-    color:#00abf0;
+
+.button button:hover {
+    color: #00abf0;
 }
-.icon{
-    position:absolute;
-    bottom:1rem;
-    width:13rem;
+
+.icon {
+    position: absolute;
+    bottom: 1rem;
+    width: 13rem;
     height: 3rem;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     /* margin-bottom:2rem; */
 }
-.icon a{
+
+.icon a {
     position: relative;
     text-decoration: none;
-    width:40px;
-    height:40px;
+    width: 40px;
+    height: 40px;
     border: 2px solid #00abf0;
     border-radius: 50%;
     display: flex;
     background-color: transparent;
     justify-content: center;
     align-items: center;
-    font-size:20px;
+    font-size: 20px;
     cursor: pointer;
     color: #00abf0;
     overflow: hidden;
     z-index: 1;
 }
 
-.icon a::before{
+.icon a::before {
     position: absolute;
     content: " ";
     top: 0;
     left: 0;
     height: 100%;
-    width:0;
-    background-color:#00abf0;
-    z-index:-1;
-    transition:0.5s;
+    width: 0;
+    background-color: #00abf0;
+    z-index: -1;
+    transition: 0.5s;
 
 }
-.icon a:hover::before{
+
+.icon a:hover::before {
     width: 100%;
-    transition:0.5s;
+    transition: 0.5s;
     color: #ededed;
 }
-.icon a:hover{
+
+.icon a:hover {
     color: #081b29;
 }
-.hero_img{
+
+.hero_img {
     max-width: 50%;
     max-height: 440px;
     position: relative;
     z-index: -1;
-    top:2rem;
+    top: 2rem;
     left: 6rem;
 }
-.hero_img img{
+
+.hero_img img {
     width: 400px;
     height: 400px;
 }
 
-.sec2{
+.sec2 {
     padding: 0 6rem;
     padding-bottom: 10rem;
 }
-.sec2_content h1{
-    font-size:2.5rem;
+
+.sec2_content h1 {
+    font-size: 2.5rem;
     font-weight: 600;
     text-align: center;
     color: #00abf0;
 }
-.fb{
+
+.fb {
     background-image: url('./assets/facebook.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.box{
+
+.box {
     width: 250px;
     height: 250px;
     margin-top: 2rem;
 }
-.container{
+
+.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 5rem;
 }
-.btn{
+
+.btn {
     display: flex;
     position: relative;
-    top:270px;
+    top: 270px;
 }
-.btn button{
-    width:8rem;
+
+.btn button {
+    width: 8rem;
     height: 3rem;
-    border:2px solid #00abf0;
+    border: 2px solid #00abf0;
     background-color: transparent;
     border-radius: 0.7rem;
     margin-right: 1rem;
     margin-left: 1rem;
 }
-.btn button a{
+
+.btn button a {
     text-decoration: none;
-    color:#00abf0;
+    color: #00abf0;
     font-size: 0.9rem;
     font-weight: 600;
 }
-.btn button:hover , .btn button:hover a{
-    background-color:#00abf0;
+
+.btn button:hover,
+.btn button:hover a {
+    background-color: #00abf0;
     color: #081b29;
 }
 
-.up{
+.up {
     background-image: url('./assets/up.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.amazon{
+
+.amazon {
     background-image: url('./assets/amazon2.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.daraz{
+
+.daraz {
     background-image: url('./assets/daraz.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.apple{
+
+.apple {
     background-image: url('./assets/apple.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.rozee{
+
+.rozee {
     background-image: url('./assets/rozee.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.kitchen{
+.kitchen {
     background-image: url('./assets/kitchen.avif');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.tour{
+
+.tour {
     background-image: url('./assets/travel.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.interior{
+
+.interior {
     background-image: url('./assets/interior.webp');
     background-position: center;
     background-repeat: no-repeat;
@@ -286,207 +327,292 @@ header ul li:hover , header ul li.active{
 
 /* ------------------ */
 
-@media screen and (max-width:1025px){
-  
-    .icon{
+@media screen and (max-width:1025px) {
+
+    .icon {
         position: relative;
         top: 2rem;
     }
-    .sec2{
+
+    .sec2 {
         padding: 0 3rem;
         position: relative;
-        top:5rem;
+        top: 5rem;
     }
-    .container{
-    
+
+    .container {
+
         gap: 1rem;
     }
-    .box{
+
+    .box {
         margin-bottom: 5rem;
     }
-    
+
 }
-@media screen and (max-width:769px){
-    .hero{
+
+@media screen and (max-width:769px) {
+    .hero {
         position: relative;
         top: 8rem;
         height: 400px;
     }
-    body{
+
+    body {
         padding: 0 3rem;
     }
 
-    .hero h1{
+    .hero h1 {
         font-size: 2rem;
         font-weight: 700;
     }
-    .hero h2{
+
+    .hero h2 {
         text-wrap: nowrap;
     }
-    .hero p{
+
+    .hero p {
         font-size: 0.7rem;
     }
-    .hero_img{
-        top:3rem;
+
+    .hero_img {
+        top: 3rem;
         left: 4rem;
     }
-    .hero_img img{
+
+    .hero_img img {
         width: 300px;
         height: 300px;
     }
-    .button button{
-        width:7rem;
+
+    .button button {
+        width: 7rem;
         height: 2.3rem;
     }
-    .icon i{
-        font-size: 1rem;    
+
+    .icon i {
+        font-size: 1rem;
     }
-    .icon{
+
+    .icon {
         position: relative;
         top: 1.5rem;
-    justify-content: space-evenly;
+        justify-content: space-evenly;
     }
-    .sec2{
+
+    .sec2 {
         padding: 0;
         position: relative;
         top: 7rem;
         padding-bottom: 6rem;
     }
-    .box{
+
+    .box {
         width: 200px;
         height: 200px;
-        margin-top:1rem;
+        margin-top: 1rem;
     }
-    .container{
+
+    .container {
         gap: 1.6rem;
     }
-    .btn{
-        top:220px;
+
+    .btn {
+        top: 220px;
     }
 }
 
-@media screen and (max-width:426px){
- 
-    body{
+@media screen and (max-width:426px) {
+
+    body {
         padding: 0 0.7rem;
         width: 100%;
         height: 100%;
     }
-    header{
+
+    header {
         padding: 0 2rem;
         height: 4rem;
     }
-    header ul{
-            display: none;
-        }
-    .menu{
-        display:inline-block;
+
+    header ul {
+        display: none;
+    }
+
+    .menu {
+        display: inline-block;
         font-size: 2rem;
     }
-    .hero_sec{
+
+    .hero_sec {
         display: flex;
         flex-direction: column;
-    
+
     }
-    
-     .hero{
+
+    .hero {
         top: 5rem;
-        width:90%;
-   
+        width: 90%;
+
     }
-    .hero h1{
+
+    .hero h1 {
         text-wrap: nowrap;
         margin-bottom: 2.5rem;
     }
-    .hero h2{
+
+    .hero h2 {
         font-size: 1.4rem;
         margin-bottom: 2rem;
     }
-    .hero p{
+
+    .hero p {
         font: 16px;
     }
-    .button{
+
+    .button {
         justify-content: space-evenly;
         margin-left: -2rem;
     }
-    .sec2 h1{
+
+    .sec2 h1 {
         text-wrap: nowrap;
         padding-left: 2rem;
     }
-    .sec2{
-        top:9rem;
+
+    .sec2 {
+        top: 9rem;
     }
-    .box{
-      
+
+    .box {
+
         width: 200px;
         height: 150px;
-   
+
     }
-    .container{
+
+    .container {
         gap: 2rem;
         padding: 0;
     }
-    .icon{
+
+    .icon {
         top: 0.5rem;
-        right:1.7rem;
+        right: 1.7rem;
     }
-    .icon i{
-        font-size:0.6rem;
+
+    .icon i {
+        font-size: 0.6rem;
     }
-    .icon a{
-        width:30px;
-        height:30px;
+
+    .icon a {
+        width: 30px;
+        height: 30px;
     }
-    .hero_img{
+
+    .hero_img {
         position: relative;
         top: 7rem;
         left: -2rem;
     }
-    .sec2{
+
+    .sec2 {
         top: 20rem;
     }
-    .sec2 h1{
+
+    .sec2 h1 {
         font-size: 1.9rem;
-        padding-left:0.5rem ;
+        padding-left: 0.5rem;
     }
-    .container{
+
+    .container {
         justify-content: space-evenly;
     }
-    .box{
+
+    .box {
         width: 150px;
         height: 150px;
     }
-    .btn{
+
+    .btn {
         justify-content: space-around;
         top: 11rem;
     }
-    .btn button{
-        width:5.5rem;
+
+    .btn button {
+        width: 5.5rem;
         height: 3rem;
         margin-left: 0.5rem;
         margin-right: 0.5rem;
     }
-    .btn button a{
-        font-size:0.8rem;
+
+    .btn button a {
+        font-size: 0.8rem;
     }
 
 }
 
-@media screen and (max-width:376px){
+@media screen and (max-width:376px) {
 
-.hero_img{
+    .hero_img {
         position: relative;
         left: -4rem;
     }
-    .sec2{
-        top: 23rem;
+
+    .icon {
+        top: 3rem;
+    }
+
+    .icon a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .icon i {
+        font-size: 1.5rem;
+    }
+
+    .sec2 {
+        top: 10rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    header {
+        height: 5rem;
     }
 
 }
-@media screen and (max-width:321px){
-   .sec2 h1{
-    font-size: 1.5rem;
-   }
+
+@media screen and (max-width:321px) {
+    .sec2 h1 {
+        font-size: 1.5rem;
+    }
+
+    .icon {
+        top: 3rem;
+    }
+
+    .icon a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .icon i {
+        font-size: 1.5rem;
+    }
+
+    .sec2 {
+        top: 10rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    header {
+        height: 5rem;
+    }
 }
-
-
